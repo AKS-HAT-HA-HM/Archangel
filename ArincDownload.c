@@ -143,7 +143,7 @@ void DownloadMessagesFromARINCtxvrBrx2( ARINC429_RxMsgArray * const ARINCMsgArra
  * Return: None (void)
  * 
  * Requirement Implemented: INT1.0101.S.IOP.3.004
- */
+ */#tag9
 void TransmitLatestARINCMsgIfValid( ARINC429_RxMsgArray * const rxMsgArray,
                                     uint16_t octalStdLabel,
                                     const ARINC429_TX_CHANNEL channel )
