@@ -34,7 +34,7 @@
  *      reset the arinc array's bus counts to zero.  
  * 
  * Requirement Implemented: INT1.0101.S.IOP.3.001
- */
+ */#tag1
 void DownloadMessagesFromARINCtxvrArx2( ARINC429_RxMsgArray * const ARINCMsgArray )
 {
     if (NULL == ARINCMsgArray)
@@ -69,7 +69,7 @@ void DownloadMessagesFromARINCtxvrArx2( ARINC429_RxMsgArray * const ARINCMsgArra
     return;
 }
 
-/*
+/*#tag2
  * Function: ProcessAHRSTimeout
  * 
  * Description: Increments an ARINC_RxMsgArray's message counter. This 
