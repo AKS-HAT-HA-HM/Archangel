@@ -21,7 +21,7 @@
 /**************  Macro Definition(s) ***********************/
 #define MAX_NUM_RX_MSGS 32u 
 #define MAX_OCTAL_LABEL_VALUE 377
-
+#tag1
 /**************  Function Definition(s) ********************/
 
 /* Function: DownloadMessagesFromARINCtxvrArx2
@@ -35,7 +35,7 @@
  * 
  * Requirement Implemented: INT1.0101.S.IOP.3.001
  */
-#tag1
+
 void DownloadMessagesFromARINCtxvrArx2( ARINC429_RxMsgArray * const ARINCMsgArray )
 {
     if (NULL == ARINCMsgArray)
