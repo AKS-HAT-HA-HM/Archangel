@@ -21,9 +21,9 @@
 /**************  Macro Definition(s) ***********************/
 #define MAX_NUM_RX_MSGS 32u 
 #define MAX_OCTAL_LABEL_VALUE 377
-#tag1
-/**************  Function Definition(s) ********************/
 
+/**************  Function Definition(s) ********************/
+#tag1
 /* Function: DownloadMessagesFromARINCtxvrArx2
  * 
  * Return: None 
