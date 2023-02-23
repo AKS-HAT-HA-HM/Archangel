@@ -67,9 +67,10 @@ void DownloadMessagesFromARINCtxvrArx2( ARINC429_RxMsgArray * const ARINCMsgArra
         numWordsProcessed++;
     }
     return;
-}#tag1
+}
+#tag1
 
-/*#tag2
+/*
  * Function: ProcessAHRSTimeout
  * 
  * Description: Increments an ARINC_RxMsgArray's message counter. This 
@@ -87,9 +88,7 @@ bool ProcessARINCBusFailure( ARINC429_RxMsgArray * ARINCMsgArray )
     return ((ARINCMsgArray->currentCounts >= ARINCMsgArray->maxBusFailureCounts))
             ? true : false;
 }
-#tag2
 
-#tag3
 /* Function: DownloadMessagesFromARINCtxvrBrx2
  *
  * Description: Retrieves all messages from transceiver B FIFO and processes
@@ -131,9 +130,7 @@ void DownloadMessagesFromARINCtxvrBrx2( ARINC429_RxMsgArray * const ARINCMsgArra
     }
     return;
 }
-#tag3
 
-#tag4
 /* Function: TransmitLatestARINCMsgIfValid
  * 
  * Description: Accepts as inputs a pointer to a rxMessage array and a label. Searches the rxArray for a 
@@ -180,5 +177,4 @@ void TransmitLatestARINCMsgIfValid( ARINC429_RxMsgArray * const rxMsgArray,
     }
     return;
 }
-#tag4
 /* end ArincDownload.c source file*/
