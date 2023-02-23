@@ -23,7 +23,7 @@
 #define MAX_OCTAL_LABEL_VALUE 377
 
 /**************  Function Definition(s) ********************/
-
+#tag1
 /* Function: DownloadMessagesFromARINCtxvrArx2
  * 
  * Return: None 
@@ -35,7 +35,6 @@
  * 
  * Requirement Implemented: INT1.0101.S.IOP.3.001
  */
-#tag1
 void DownloadMessagesFromARINCtxvrArx2( ARINC429_RxMsgArray * const ARINCMsgArray )
 {
     if (NULL == ARINCMsgArray)
@@ -68,8 +67,7 @@ void DownloadMessagesFromARINCtxvrArx2( ARINC429_RxMsgArray * const ARINCMsgArra
         numWordsProcessed++;
     }
     return;
-}
-#tag1
+}#tag1
 
 /*#tag2
  * Function: ProcessAHRSTimeout
