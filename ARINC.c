@@ -204,6 +204,8 @@ static ARINC429_ReadMsgReturnStatus ARINC429_ProcessDiscreteMessage( ARINC429_Rx
 }
 #tag7
 
+
+#tag8
 /* Function: ARINC429_IsLabelDataFresh
  *
  * Description: Reports whether a received message is fresh  (i.e. the maximum 
@@ -228,8 +230,10 @@ static bool ARINC429_IsLabelDataFresh( const uint32_t clock_ms,
 
     return returnVal;
 }
+#tag8
 
-     
+
+#tag9     
 /* Function: ARINC429_IsLabelDataNotBabbling
  *
  * Description: Determines if an rxMsg is babbling (receive interval is faster
@@ -256,6 +260,7 @@ static bool ARINC429_IsLabelDataNotBabbling( const uint32_t clock_ms,
     bool returnVal = (elapsedTime >= rxMsg->msgConfig.minTransmitInterval_ms);
     return returnVal;
 }
+#tag9
 
 /**************  Function Definition(s) ********************/
 
