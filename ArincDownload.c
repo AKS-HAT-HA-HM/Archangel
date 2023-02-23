@@ -69,7 +69,7 @@ void DownloadMessagesFromARINCtxvrArx2( ARINC429_RxMsgArray * const ARINCMsgArra
     return;
 }
 
-/*#tag2
+/*#tag0
  * Function: ProcessAHRSTimeout
  * 
  * Description: Increments an ARINC_RxMsgArray's message counter. This 
