@@ -51,7 +51,7 @@ static bool ARINC429_IsLabelDataFresh( const uint32_t clock_ms, // current clock
  * Return: ARINC429_ReadMsgReturnStatus based on read status 
  * 
  * Requirement Implemented: INT1.0101.S.IOP.4.003 
- */#tag3
+ */
 static ARINC429_ReadMsgReturnStatus ARINC429_ProcessStdBNRmessage( ARINC429_RxMsg * const thisRxMsg,
                                                                    const uint32_t ARINCMsg )
 {
@@ -115,7 +115,7 @@ static ARINC429_ReadMsgReturnStatus ARINC429_ProcessStdBNRmessage( ARINC429_RxMs
  * Return: ARINC429_ReadMsgReturnStatus based on process result 
  * 
  * Requirement Implemented: INT1.0101.S.IOP.4.004 
- */#tag4
+ */
 static ARINC429_ReadMsgReturnStatus ARINC429_ProcessStdBCDmessage( ARINC429_RxMsg * const thisRxMsg, // Received message, includes message configuration
                                                                    const uint32_t arincMsg ) // Received ARINC message
 {
@@ -571,7 +571,7 @@ ARINC429_SM ARINC429_CheckValidityOfARINC_BNR_Data( const float engData,
  * Return: ARINC429_GetLabelDataReturnStatus status of read. 
  * 
  * Requirement Implemented: INT1.0101.S.IOP.4.010 
- */#tag5
+ */
 ARINC429_GetLabelDataReturnStatus ARINC429_GetLatestLabelData( const ARINC429_RxMsgArray * const rxMsgArray,
                                                                const arincLabel hexFlippedLabel, // The label number of the ARINC data to be retrieved
                                                                ARINC429_RxMsgData * const rxMsgData ) // The latest received data corresponding to the given label and rx number
@@ -627,7 +627,7 @@ ARINC429_GetLabelDataReturnStatus ARINC429_GetLatestLabelData( const ARINC429_Rx
  *         input parameter the ARINC word if valid. 
  * 
  * Requirement Implemented: INT1.0101.S.IOP.4.009 
- */#tag6
+ */
 bool ARINC429_GetLatestARINC429Word( const ARINC429_RxMsgArray * const rxMsgArray,
                                      const arincLabel octalStdLabel,
                                      uint32_t * const arincWord )
