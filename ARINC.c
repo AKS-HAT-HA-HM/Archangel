@@ -42,6 +42,7 @@ static bool ARINC429_IsLabelDataFresh( const uint32_t clock_ms, // current clock
 
 /**************  Static Function Definition(s) *************/
 
+#tag5
 /* Function: ARINC429_ProcessStdBNRmessage
  *
  * Description: Parses the fields of a standard ARINC429 binary message. 
@@ -107,7 +108,9 @@ static ARINC429_ReadMsgReturnStatus ARINC429_ProcessStdBNRmessage( ARINC429_RxMs
 
     return readStatus;
 }
+#tag5
 
+#tag6
 /* Function: ARINC429_ProcessStdBCDmessage
  *
  * Description: Processes the fields of an ARINC429 BCD message. 
@@ -165,7 +168,9 @@ static ARINC429_ReadMsgReturnStatus ARINC429_ProcessStdBCDmessage( ARINC429_RxMs
 
     return ARINC429_READ_MSG_SUCCESS;
 }
+#tag6
 
+#tag7
 /* Function: ARINC429_ProcessDiscreteMessage
  *
  * Description: Parses the message fields of a discrete ARINC429 message. 
@@ -197,7 +202,7 @@ static ARINC429_ReadMsgReturnStatus ARINC429_ProcessDiscreteMessage( ARINC429_Rx
     thisRxMsg->data.SDI = ARINC429_ExtractSDIbits( arincMsg ); /* Get SDI bits */
     return ARINC429_READ_MSG_SUCCESS;
 }
-
+#tag7
 
 /* Function: ARINC429_IsLabelDataFresh
  *
