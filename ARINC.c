@@ -263,7 +263,7 @@ static bool ARINC429_IsLabelDataNotBabbling( const uint32_t clock_ms,
 #tag9
 
 /**************  Function Definition(s) ********************/
-
+#tag10
 /* Function: ARINC429_ProcessReceivedMessage
  *
  * Description: Takes a received ARINC429 message and checks each member of the
@@ -348,9 +348,10 @@ ARINC429_ReadMsgReturnStatus ARINC429_ProcessReceivedMessage( ARINC429_RxMsgArra
 
     return readMsgReturnStatus;
 }
+#tag10
 
 
-
+#tag11
 /* Function: ARINC429_AssembleStdBNRmessage
  *
  * Description: Constructs a transmit 32bit ARINC429 word based on the input 
@@ -437,7 +438,10 @@ ARINC429_WriteMsgReturnStatus ARINC429_AssembleStdBNRmessage( const ARINC429_TxM
 
     return writeMsgReturnStatus;
 }
+#tag11
 
+
+#tag12
 /* Function: ARINC429_AssembleDiscreteMessage
  *
  * Description: Assembles a standard ARINC429 discrete message
@@ -476,7 +480,9 @@ ARINC429_WriteMsgReturnStatus ARINC429_AssembleDiscreteMessage( const ARINC429_T
     *arincMsg = arincMsgTemp; // Write result
     return ARINC429_WRITE_MSG_SUCCESS;
 }
+#tag12
 
+#tag13
 /* Function: ARINC429_AssembleStdBCDmessage
  *
  * Description: Assembles a standard BCD ARINC429 message. 
@@ -552,7 +558,9 @@ ARINC429_WriteMsgReturnStatus ARINC429_AssembleStdBCDmessage( const ARINC429_TxM
     *arincMsg = arincMsgTemp; // Write result
     return writeMsgReturnStatus;
 }
+#tag13
 
+#tag14
 /* Function: ARINC429_CheckValidityOfARINC_BNR_Message
  *
  * Description: Checks the upper and lower bounds of ARINC binary engineering 
@@ -569,7 +577,9 @@ ARINC429_SM ARINC429_CheckValidityOfARINC_BNR_Data( const float engData,
     return ((engData < lblCfg->minValidValue) || (engData > lblCfg->maxValidValue)) ?
             ARINC429_SSM_BNR_FAILURE_WARNING : ARINC429_SSM_BNR_NORMAL_OPERATION;
 }
+#tag14
 
+#tag15
 /* Function: ARINC429_GetLatestLabelData
  *
  * Description: Searches an rxMsg array for a matching label. If a label
@@ -623,7 +633,9 @@ ARINC429_GetLabelDataReturnStatus ARINC429_GetLatestLabelData( const ARINC429_Rx
 
     return getLabelDataReturnStatus;
 }
+#tag15
 
+#tag16
 /* Function: ARINC429_GetLatestARINC429Word
  *
  * Description: Searches an rxMessageArray for a matching label. If 
@@ -667,4 +679,5 @@ bool ARINC429_GetLatestARINC429Word( const ARINC429_RxMsgArray * const rxMsgArra
     }
 }
 
+#tag16
 /* End of ARINC.c source file. */
